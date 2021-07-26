@@ -3,11 +3,11 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2021-07-25T06:51:20.550Z",
+        "start_timestamp": "2021-07-26T17:05:29.353Z",
         "before": [
           {
             "result": {
-              "duration": 1043449853,
+              "duration": 844960435,
               "status": "passed"
             },
             "match": {
@@ -16,13 +16,13 @@
           }
         ],
         "line": 14,
-        "name": "Verify that when user enters correct user name and password they should be able to login successfully",
+        "name": "Verify Login Functionality with correct username and password",
         "description": "",
-        "id": "login-feature;verify-that-when-user-enters-correct-user-name-and-password-they-should-be-able-to-login-successfully;;2",
+        "id": "login-feature;verify-login-functionality-with-correct-username-and-password;;2",
         "after": [
           {
             "result": {
-              "duration": 83691676,
+              "duration": 108159909,
               "status": "passed"
             },
             "match": {
@@ -35,89 +35,78 @@
         "steps": [
           {
             "result": {
-              "duration": 313811710,
+              "duration": 190955321,
               "status": "passed"
             },
-            "line": 6,
-            "name": "User has opened the Swaglab application",
+            "line": 7,
+            "name": "User is on the Swag Lab application",
             "match": {
-              "location": "loginsteps.user_has_opened_the_swaglab_application()"
+              "location": "loginsteps.user_is_on_the_swag_lab_application()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 151073260,
+              "duration": 268716930,
               "status": "passed"
             },
-            "line": 7,
-            "name": "User enters username \"standard_user\"",
+            "line": 8,
+            "name": "User enters \"standard_user\" and \"secret_sauce\"",
             "match": {
               "arguments": [
                 {
                   "val": "standard_user",
-                  "offset": 22
+                  "offset": 13
+                },
+                {
+                  "val": "secret_sauce",
+                  "offset": 33
                 }
               ],
-              "location": "loginsteps.user_enters_username_something(String)"
+              "location": "loginsteps.user_enters_something_and_something(String,String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 108257489,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "User enters password \"secret_sauce\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "secret_sauce",
-                  "offset": 22
-                }
-              ],
-              "location": "loginsteps.user_enters_password_something(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 149325163,
+              "duration": 128794482,
               "status": "passed"
             },
             "line": 9,
-            "name": "User clicks on Login button",
+            "name": "User clicks on the login button",
             "match": {
-              "location": "loginsteps.user_clicks_on_login_button()"
+              "location": "loginsteps.user_clicks_on_the_login_button()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 268240585,
+              "duration": 261758659,
               "status": "passed"
             },
             "line": 10,
-            "name": "User should be landed on the Products Page",
+            "name": "User should be able to see the homepage",
             "match": {
-              "location": "loginsteps.user_should_be_landed_on_the_products_page()"
+              "location": "loginsteps.user_should_be_able_to_see_the_homepage()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@Login"
+            "name": "@LoginFeature"
+          },
+          {
+            "name": "@PositiveLogin"
           }
         ]
       },
       {
-        "start_timestamp": "2021-07-25T06:51:22.701Z",
+        "start_timestamp": "2021-07-26T17:05:31.191Z",
         "before": [
           {
             "result": {
-              "duration": 468828846,
+              "duration": 585966257,
               "status": "passed"
             },
             "match": {
@@ -125,14 +114,14 @@
             }
           }
         ],
-        "line": 26,
-        "name": "Verify that when user enters Wrong user name and password they should be able to login successfully",
+        "line": 25,
+        "name": "Verify the error message when we give incorrect username and password",
         "description": "",
-        "id": "login-feature;verify-that-when-user-enters-wrong-user-name-and-password-they-should-be-able-to-login-successfully;;2",
+        "id": "login-feature;verify-the-error-message-when-we-give-incorrect-username-and-password;;2",
         "after": [
           {
             "result": {
-              "duration": 117721055,
+              "duration": 69335358,
               "status": "passed"
             },
             "match": {
@@ -145,98 +134,448 @@
         "steps": [
           {
             "result": {
-              "duration": 304069416,
+              "duration": 194573901,
               "status": "passed"
             },
             "line": 18,
-            "name": "User has opened the Swaglab application",
+            "name": "User is on the Swag Lab application",
             "match": {
-              "location": "loginsteps.user_has_opened_the_swaglab_application()"
+              "location": "loginsteps.user_is_on_the_swag_lab_application()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 143847740,
+              "duration": 301797101,
               "status": "passed"
             },
             "line": 19,
-            "name": "User enters username \"standard_user\"",
+            "name": "User enters incorrect \"sugandha\" and \"password@123\"",
             "match": {
               "arguments": [
                 {
-                  "val": "standard_user",
-                  "offset": 22
+                  "val": "sugandha",
+                  "offset": 23
+                },
+                {
+                  "val": "password@123",
+                  "offset": 38
                 }
               ],
-              "location": "loginsteps.user_enters_username_something(String)"
+              "location": "loginsteps.user_enters_incorrect_something_and_something(String,String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 82125297,
+              "duration": 74481093,
               "status": "passed"
             },
             "line": 20,
-            "name": "User enters password \"secret\"",
+            "name": "User clicks on the login button",
             "match": {
-              "arguments": [
-                {
-                  "val": "secret",
-                  "offset": 22
-                }
-              ],
-              "location": "loginsteps.user_enters_password_something(String)"
+              "location": "loginsteps.user_clicks_on_the_login_button()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 67294572,
+              "duration": 32220502,
               "status": "passed"
             },
             "line": 21,
-            "name": "User clicks on Login button",
-            "match": {
-              "location": "loginsteps.user_clicks_on_login_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 48538961,
-              "status": "passed"
-            },
-            "line": 22,
-            "name": "User should be getting the \"Epic sadface: Username and password do not match any user in this service\"",
+            "name": "User should be able to see the error \"Epic sadface: Username and password do not match any user in this service\"",
             "match": {
               "arguments": [
                 {
                   "val": "Epic sadface: Username and password do not match any user in this service",
-                  "offset": 28
+                  "offset": 38
                 }
               ],
-              "location": "loginsteps.user_should_be_getting_the_something(String)"
+              "location": "loginsteps.user_should_be_able_to_see_the_error_something(String)"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@Login"
+            "name": "@LoginFeature"
+          },
+          {
+            "name": "@NegativeLogin"
           }
         ]
       }
     ],
-    "name": "Login Feature",
-    "description": "  Description: This feature will be used to login to Simplilearn Application",
+    "name": "Login feature",
+    "description": "  Description: This feature will be used to login the Swag lab",
     "id": "login-feature",
     "keyword": "Feature",
     "uri": "file:src/test/java/Features/Login.feature",
     "tags": [
       {
-        "name": "@Login",
+        "name": "@LoginFeature",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 208497008,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User is on the Swag Lab application",
+            "match": {
+              "location": "loginsteps.user_is_on_the_swag_lab_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 270019557,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User enters \"standard_user\" and \"secret_sauce\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "standard_user",
+                  "offset": 13
+                },
+                {
+                  "val": "secret_sauce",
+                  "offset": 33
+                }
+              ],
+              "location": "loginsteps.user_enters_something_and_something(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 133363846,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User clicks on the login button",
+            "match": {
+              "location": "loginsteps.user_clicks_on_the_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 248132147,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User should be able to see the homepage",
+            "match": {
+              "location": "loginsteps.user_should_be_able_to_see_the_homepage()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-07-26T17:05:32.455Z",
+        "before": [
+          {
+            "result": {
+              "duration": 566054098,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Baseclass.setup()"
+            }
+          }
+        ],
+        "line": 19,
+        "name": "Verify that user is able to add the single product to the cart",
+        "description": "",
+        "id": "product-feature;verify-that-user-is-able-to-add-the-single-product-to-the-cart;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 83928045,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Baseclass.teardown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 21662601,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User is on the homepage",
+            "match": {
+              "location": "Productselection.user_is_on_the_homepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 67965164,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User selects the \"Sauce Labs Bolt T-Shirt\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Sauce Labs Bolt T-Shirt",
+                  "offset": 18
+                }
+              ],
+              "location": "Productselection.user_selects_the_something(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 56958211,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Click on the Add to cart button",
+            "match": {
+              "location": "Productselection.click_on_the_add_to_cart_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 54376512,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Product added successfully to the cart",
+            "match": {
+              "location": "Productselection.product_added_successfully_to_the_cart()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ProductSelection"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 197350600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User is on the Swag Lab application",
+            "match": {
+              "location": "loginsteps.user_is_on_the_swag_lab_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 298367424,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User enters \"standard_user\" and \"secret_sauce\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "standard_user",
+                  "offset": 13
+                },
+                {
+                  "val": "secret_sauce",
+                  "offset": 33
+                }
+              ],
+              "location": "loginsteps.user_enters_something_and_something(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 137332099,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User clicks on the login button",
+            "match": {
+              "location": "loginsteps.user_clicks_on_the_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 131268663,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User should be able to see the homepage",
+            "match": {
+              "location": "loginsteps.user_should_be_able_to_see_the_homepage()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-07-26T17:05:34.177Z",
+        "before": [
+          {
+            "result": {
+              "duration": 457923219,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Baseclass.setup()"
+            }
+          }
+        ],
+        "line": 22,
+        "name": "Verify that user is able to add multiple products to the cart using datatable",
+        "description": "",
+        "id": "product-feature;verify-that-user-is-able-to-add-multiple-products-to-the-cart-using-datatable",
+        "after": [
+          {
+            "result": {
+              "duration": 75780470,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Baseclass.teardown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 36435686,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "User is on the homepage",
+            "match": {
+              "location": "Productselection.user_is_on_the_homepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 213618501,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "User selects the product",
+            "match": {
+              "location": "Productselection.user_selects_the_product(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Field",
+                  "Value"
+                ]
+              },
+              {
+                "cells": [
+                  "Product1",
+                  "Sauce Labs Backpack"
+                ]
+              },
+              {
+                "cells": [
+                  "Product2",
+                  "Sauce Labs Bike Light"
+                ]
+              },
+              {
+                "cells": [
+                  "Product3",
+                  "Sauce Labs Fleece Jacket"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 78521062,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "Click on the Add to cart button",
+            "match": {
+              "location": "Productselection.click_on_the_add_to_cart_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 18432992,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "Product added successfully to the cart",
+            "match": {
+              "location": "Productselection.product_added_successfully_to_the_cart()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ProductSelection"
+          },
+          {
+            "name": "@DataTable"
+          }
+        ]
+      }
+    ],
+    "name": "Product feature",
+    "description": "  Description: This feature will be used to login the Swag lab",
+    "id": "product-feature",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/Features/Products.feature",
+    "tags": [
+      {
+        "name": "@ProductSelection",
         "type": "Tag",
         "location": {
           "line": 1,
